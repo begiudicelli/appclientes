@@ -27,9 +27,16 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "public/plugin/fontawesome-free/css/all.min.css",
+              "public/css/adminlte.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "public/plugin/jquery/jquery.min.js",
+              "public/plugin/bootstrap/js/bootstrap.bundle.min.js",
+              "public/plugin/fastclick/fastclick.js",
+              "public/js/adminlte.min.js"
+            ]
           },
           "configurations": {
             "production": {
