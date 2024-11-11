@@ -5,7 +5,12 @@ import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
+<<<<<<< HEAD
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideHttpClient()]
+=======
+  providers: [provideZoneChangeDetection({ eventCoalescing: true }), 
+    provideRouter(routes),provideHttpClient()]
+>>>>>>> 2974512 (updated v)
 };
 
 

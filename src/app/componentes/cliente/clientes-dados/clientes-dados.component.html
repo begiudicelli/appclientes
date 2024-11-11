@@ -1,0 +1,184 @@
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Dados do Cliente</h3>
+        <div class="row">
+            <div class="col-md-4 mb-2">
+                <img class="profile-user-img img-fluid img-circle"
+                    [src]="cliente.fotoCli" [ngStyle]="{'width':'300px'}">
+            </div>
+            <div class="col-md-4 mb-2">
+                <img class="profile-user-img img-fluid"
+                    [src]="cliente.imagemEmp" [ngStyle]="{'width':'400px'}">
+            </div>
+        </div>
+    </div>
+
+    <form (ngSubmit)="submit()" #clienteForm="ngForm" >
+        <div class="card-body">
+            <div class="row">
+                <div class="form-group" class="col-md-4 mb-4">
+                    <label for="nome">Nome do Cliente</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite o nome do cliente" 
+                      name="nome" [(ngModel)]="cliente.nome"  minlength="5">
+                </div>
+                <div class="form-group" class="col-md-4">
+                    <label for="empresa">Nome da Empresa</label>
+                    <input type="text" class="form-control" id="empresa" placeholder="Digite o nome da Empresa"
+                        name="empresa" [(ngModel)]="cliente.empresa" required>
+                </div>
+                <div class="form-group" class="col-md-4">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" class="form-control" id="endereco" placeholder="endereço da Empresa"
+                        name="endereco" [(ngModel)]="cliente.endereco">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group" class="col-md-3 mb-4">
+                    <label for="uf"> UF </label>
+                    <select name="uf" id="uf" class="form-control" [(ngModel)]="cliente.UF">
+                        <option value=""> Selecione a UF do clinte </option>
+                        <option value="AC"> AC - Acre </option>
+                        <option value="AL"> AL - Alagoas </option>
+                        <option value="AP"> AP - Amapá </option>
+                        <option value="AM"> AM - Amazonas </option>
+                        <option value="BA"> BA - Bahia </option>
+                        <option value="CE"> CE - Ceará </option>
+                        <option value="DF"> DF - Distrito Federal </option>
+                        <option value="ES"> ES - Espírito Santo </option>
+                        <option value="GO"> GO - Goiás </option>
+                        <option value="MA"> MA - Maranhão </option>
+                        <option value="MT"> MT - Mato Grosso </option>
+                        <option value="MS"> MS - Mato Grosso do Sul </option>
+                        <option value="MG"> MG - Minas Gerais </option>
+                        <option value="PA"> PA - Pará </option>
+                        <option value="PB"> PB - Paraíba </option>
+                        <option value="PR"> PR - Paraná </option>
+                        <option value="PE"> PE - Pernambuco </option>
+                        <option value="PI"> PI - Piauí </option>
+                        <option value="RJ"> RJ - Rio de Janeiro </option>
+                        <option value="RN"> RN - Rio Grande do Norte </option>
+                        <option value="RS"> RS - Rio Grande do Sul </option>
+                        <option value="RO"> RO - Rondônia </option>
+                        <option value="RR"> RR - Roraima </option>
+                        <option value="SP"> SP - São Paulo </option>
+                        <option value="SC"> SC - Santa Catarina </option>
+                        <option value="SE"> SE - Sergipe </option>
+                        <option value="TO"> TO - Tocantins </option>
+                    </select>
+                </div>
+                <div class="form-group" class="col-md-3">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" placeholder="Digite a cidade" name="cidade"
+                        [(ngModel)]="cliente.cidade">
+                </div>
+                <div class="form-group" class="col-md-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="digite o email do cliente"
+                        name="email" [(ngModel)]="cliente.email" required>
+                </div>
+                <div class="form-group" class="col-md-3">
+                    <label for="homePage">Home Page</label>
+                    <input type="url" class="form-control" id="homePage" placeholder="digite a home page do cliente"
+                        name="homePage" [(ngModel)]="cliente.homePage">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group" class="col-md-3 mb-4">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="" name="telefone"
+                        [(ngModel)]="cliente.telefone">
+                </div>
+
+                <div class="form-group" class="col-md-3">
+                    <label for="AnoPrimeiraCompra">Ano da primeira compra do Cliente</label>
+                    <input type="number" class="form-control" id="AnoPrimeiraCompra"
+                        placeholder="digite o ano da primeira compra do cliente" name="AnoPrimeiraCompra"
+                        [(ngModel)]="cliente.AnoPrimeiraCompra">
+                </div>
+                <div class="form-group" class="col-md-3">
+                    <label for="vlrMaiorCompra">Valor da maior compra do Cliente</label>
+                    <input type="number" class="form-control" id="vlrMaiorCompra" name="vlrMaiorCompra"
+                        [(ngModel)]="cliente.vlrMaiorCompra">
+                </div>
+                <div class="form-group" class="col-md-3">
+                    <label for="dataMaiorCompra">Data da maior compra do cliente</label>
+                    <input type="text" class="form-control" id="dataMaiorCompra"
+                        placeholder="digite a data da maior compra" name="dataMaiorCompra"
+                        [(ngModel)]="cliente.dataMaiorCompra">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group" class="col-md-5 mb-4">
+                    <label for="exampleInputFile">Selecione um nova foto para o Cliente</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="exampleInputFile" name="fotoCli"
+                                (change)="carregarFotoCliente($event)" accept="image/*">
+                            <label class="custom-file-label" for="exampleInputFile"> {{cliente.fotoCli}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" class="col-md-5 mb-4">
+                    <label for="exampleInputFile">Selecione um nova foto para a Empresa</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="exampleInputFile" 
+                          (change)="carregarFotoEmpresa($event)" accept="image/*" >
+                        <label class="custom-file-label" for="exampleInputFile">
+                            {{cliente.imagemEmp}}</label>
+                      </div>
+                    </div>
+                  </div>            
+            </div>
+
+            <div class="card-footer">
+                <div class="btn-group mr-3">
+                    <button type="submit" class="btn btn-primary" [disabled]="! clienteForm.valid" >Salvar</button>
+                </div>
+                <div class="btn-group mr-3">
+                    <button type="button" class="btn btn-success" (click)="novoCliente(); clienteForm.reset()" >Novo Cliente</button>
+                </div>
+                <div class="btn-group mr-3">
+                    <button type="button" class="btn btn-danger" (click)="abrirModal()" >Excluir Cliente</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title"> Confirma a exclusão deste Cliente? </h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" 
+                (click)="fecharModal()" ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <div class="mr-5">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                            (click)="excluirCliente()">SIM</button>
+                </div>
+                <div class="mr-5">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal" 
+                            (click)="fecharModal()">NÃO</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

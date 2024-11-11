@@ -1,7 +1,11 @@
 {
   "clientes": [
     {
+<<<<<<< HEAD
       "id": 1,
+=======
+      "id": "1",
+>>>>>>> 2974512 (updated v)
       "nome": "Pedro Bó",
       "empresa": "ABC Construções",
       "fotoCli": ".//public/img/user2-160x160.jpg",
@@ -13,11 +17,19 @@
       "homePage": "www.abc.com.br",
       "telefone": "(31)98877-1213",
       "AnoPrimeiraCompra": 2001,
+<<<<<<< HEAD
       "vlrMaiorCompra": 235876.50,
       "dataMaiorCompra": "20/11/2020"
     },
     {
       "id": 2,
+=======
+      "vlrMaiorCompra": 235876.5,
+      "dataMaiorCompra": "20/11/2020"
+    },
+    {
+      "id": "2",
+>>>>>>> 2974512 (updated v)
       "nome": "Maria Bilu",
       "empresa": "Verde Mar Supermercados",
       "fotoCli": ".//public/img/user3-128x128.jpg",
@@ -29,11 +41,19 @@
       "homePage": "www.verdemar.com.br",
       "telefone": "(31)99567-1011",
       "AnoPrimeiraCompra": 2010,
+<<<<<<< HEAD
       "vlrMaiorCompra": 35876.50,
       "dataMaiorCompra": "12/10/2021"
     },
     {
       "id": 3,
+=======
+      "vlrMaiorCompra": 35876.5,
+      "dataMaiorCompra": "12/10/2021"
+    },
+    {
+      "id": "3",
+>>>>>>> 2974512 (updated v)
       "nome": "Roberval Taylor",
       "empresa": "Rede Globo",
       "fotoCli": ".//public/img/Cli-Roberval-Taylor.jpg",
@@ -45,11 +65,19 @@
       "homePage": "www.globo.com",
       "telefone": "(21)98765-4321",
       "AnoPrimeiraCompra": 1982,
+<<<<<<< HEAD
       "vlrMaiorCompra": 1876.50,
       "dataMaiorCompra": "10/02/1990"
     },
     {
       "id": 4,
+=======
+      "vlrMaiorCompra": 1876.5,
+      "dataMaiorCompra": "10/02/1990"
+    },
+    {
+      "id": "4",
+>>>>>>> 2974512 (updated v)
       "nome": "Alberto Roberto",
       "empresa": "Chico City",
       "fotoCli": ".//public/img/Cli-Alberto-Roberto.jpg",
@@ -61,11 +89,19 @@
       "homePage": "www.globo.com",
       "telefone": "(21)98765-4321",
       "AnoPrimeiraCompra": 1983,
+<<<<<<< HEAD
       "vlrMaiorCompra": 2876.50,
       "dataMaiorCompra": "13/02/1991"
     },
     {
       "id": 5,
+=======
+      "vlrMaiorCompra": 2876.5,
+      "dataMaiorCompra": "13/02/1991"
+    },
+    {
+      "id": "5",
+>>>>>>> 2974512 (updated v)
       "nome": "Haroldo",
       "empresa": "Globo Produções",
       "fotoCli": ".//public/img/Cli-Haroldo.jpg",
@@ -77,11 +113,19 @@
       "homePage": "www.globo.com",
       "telefone": "(21)98765-4321",
       "AnoPrimeiraCompra": 1984,
+<<<<<<< HEAD
       "vlrMaiorCompra": 3276.50,
       "dataMaiorCompra": "15/03/1993"
     },
     {
       "id": 6,
+=======
+      "vlrMaiorCompra": 3276.5,
+      "dataMaiorCompra": "15/03/1993"
+    },
+    {
+      "id": "6",
+>>>>>>> 2974512 (updated v)
       "nome": "Bento Carneiro",
       "empresa": "Globo City",
       "fotoCli": ".//public/img/Cli-Bento-Carneiro.jpg",
@@ -93,11 +137,19 @@
       "homePage": "www.globo.com",
       "telefone": "(21)98765-4321",
       "AnoPrimeiraCompra": 1985,
+<<<<<<< HEAD
       "vlrMaiorCompra": 4276.50,
       "dataMaiorCompra": "16/04/1994"
     },
     {
       "id": 7,
+=======
+      "vlrMaiorCompra": 4276.5,
+      "dataMaiorCompra": "16/04/1994"
+    },
+    {
+      "id": "7",
+>>>>>>> 2974512 (updated v)
       "nome": "Justo Veríssimo",
       "empresa": "Globo Play",
       "fotoCli": ".//public/img/Cli-Justo-Verissimo.jpg",
@@ -109,11 +161,19 @@
       "homePage": "www.globo.com",
       "telefone": "(21)98765-4321",
       "AnoPrimeiraCompra": 1984,
+<<<<<<< HEAD
       "vlrMaiorCompra": 5276.50,
       "dataMaiorCompra": "16/05/1995"
     },
     {
       "id": 8,
+=======
+      "vlrMaiorCompra": 5276.5,
+      "dataMaiorCompra": "16/05/1995"
+    },
+    {
+      "id": "8",
+>>>>>>> 2974512 (updated v)
       "nome": "Painho",
       "empresa": "Chico City",
       "fotoCli": ".//public/img/Cli-Painho.jpg",
@@ -124,12 +184,21 @@
       "email": "globo@globo.com",
       "homePage": "www.globo.com",
       "telefone": "(21)98765-4321",
+<<<<<<< HEAD
       "AnoPrimeiraCompra": 1988,
       "vlrMaiorCompra": 6176.50,
       "dataMaiorCompra": "10/05/2000"
     },
     {
       "id": 9,
+=======
+      "AnoPrimeiraCompra": 2000,
+      "vlrMaiorCompra": 6176.5,
+      "dataMaiorCompra": "10/05/2000"
+    },
+    {
+      "id": "9",
+>>>>>>> 2974512 (updated v)
       "nome": "Pantaleão",
       "empresa": "Chico City",
       "fotoCli": ".//public/img/Cli-Pantaleao.jpg",
@@ -141,11 +210,19 @@
       "homePage": "www.globo.com",
       "telefone": "(21)98765-4321",
       "AnoPrimeiraCompra": 1996,
+<<<<<<< HEAD
       "vlrMaiorCompra": 7276.50,
       "dataMaiorCompra": "11/11/2001"
     },
     {
       "id": 10,
+=======
+      "vlrMaiorCompra": 7276.5,
+      "dataMaiorCompra": "11/11/2001"
+    },
+    {
+      "id": "10",
+>>>>>>> 2974512 (updated v)
       "nome": "Professor Raimundo",
       "empresa": "EPR",
       "fotoCli": ".//public/img/Cli-Professor-Raimundo.jpg",
@@ -157,11 +234,19 @@
       "homePage": "www.epr.com",
       "telefone": "(11)98765-4321",
       "AnoPrimeiraCompra": 1998,
+<<<<<<< HEAD
       "vlrMaiorCompra": 7776.50,
       "dataMaiorCompra": "10/12/2002"
     },
     {
       "id": 11,
+=======
+      "vlrMaiorCompra": 7776.5,
+      "dataMaiorCompra": "10/12/2002"
+    },
+    {
+      "id": "11",
+>>>>>>> 2974512 (updated v)
       "nome": "Salome Maria da Anunciacao",
       "empresa": "Chico City",
       "fotoCli": ".//public/img/Cli-Salome-Maria-da-Anunciacao.jpg",
@@ -173,11 +258,19 @@
       "homePage": "www.globo.com",
       "telefone": "(11)98765-4321",
       "AnoPrimeiraCompra": 2000,
+<<<<<<< HEAD
       "vlrMaiorCompra": 8776.50,
       "dataMaiorCompra": "10/09/2003"
     },
     {
       "id": 12,
+=======
+      "vlrMaiorCompra": 8776.5,
+      "dataMaiorCompra": "10/09/2003"
+    },
+    {
+      "id": "12",
+>>>>>>> 2974512 (updated v)
       "nome": "Tin Tones",
       "empresa": "Chico City",
       "fotoCli": ".//public/img/Cli-Tin-Tones.jpg",
@@ -189,11 +282,19 @@
       "homePage": "www.globo.com",
       "telefone": "(11)98765-4321",
       "AnoPrimeiraCompra": 2002,
+<<<<<<< HEAD
       "vlrMaiorCompra": 2176.50,
       "dataMaiorCompra": "01/03/2004"
     },
     {
       "id": 13,
+=======
+      "vlrMaiorCompra": 2176.5,
+      "dataMaiorCompra": "01/03/2004"
+    },
+    {
+      "id": "13",
+>>>>>>> 2974512 (updated v)
       "nome": "Veio Zuza",
       "empresa": "Globo SP",
       "fotoCli": ".//public/img/Cli-Veio-Zuza.jpg",
@@ -205,6 +306,7 @@
       "homePage": "www.globo.com",
       "telefone": "(11)98765-4321",
       "AnoPrimeiraCompra": 2005,
+<<<<<<< HEAD
       "vlrMaiorCompra": 10176.50,
       "dataMaiorCompra": "03/03/2005"
     }
@@ -212,11 +314,24 @@
   "usuarios":[
     {
       "id": 1,
+=======
+      "vlrMaiorCompra": 10176.5,
+      "dataMaiorCompra": "03/03/2005"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+>>>>>>> 2974512 (updated v)
       "nome": "Air Rabelo",
       "email": "air@fumec.br",
       "telefone": "(xx) xxxxx-xxxx",
       "fotoUsr": "https://www.fumec.br/wp-content/uploads/2023/05/air-rebelo-248x300.jpg",
+<<<<<<< HEAD
       "localizacao": "Belo Horizonte" 
+=======
+      "localizacao": "Belo Horizonte"
+>>>>>>> 2974512 (updated v)
     }
   ]
 }

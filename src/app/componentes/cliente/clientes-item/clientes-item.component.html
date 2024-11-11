@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="card card-widget widget-user">
     <div class="widget-user-header text-white" style="background: url({{cliente.imagemEmp}}) center center;">
         <h3 class="widget-user-username text-left">{{cliente.nome}}</h3>
@@ -31,3 +32,48 @@
         </div>
     </div>
 </div>
+=======
+<a [routerLink]="['/clientes', cliente.id]">
+
+    <div class="card card-widget widget-user">
+
+        <div class="widget-user-header text-white" style="background: url({{cliente.imagemEmp}}) center center;">
+            <h3 class="widget-user-username text-right">{{cliente.nome}}</h3>
+            <h5 class="widget-user-desc text-right">{{cliente.empresa}}</h5>
+        </div>
+        <div class="widget-user-image">
+            <img class="img-circle" [src]="cliente.fotoCli" alt="User Avatar">
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-sm-4 border-right">
+                    <div class="description-block">
+                        <span class="description-text">Maior Compra</span>
+                        <h5 class="description-header">{{cliente.vlrMaiorCompra}}</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4 border-right">
+                    <div class="description-block">
+                        <span class="description-text">Data Maior Compra</span>
+                        <h5 class="description-header">{{cliente.dataMaiorCompra}}</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="description-block">
+                        <span class="description-text">Ano Primeira Compra</span>
+                        <h5 class="description-header">{{cliente.AnoPrimeiraCompra}}</h5>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</a>
+>>>>>>> 2974512 (updated v)
