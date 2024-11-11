@@ -12,5 +12,5 @@ export interface Cliente {
     telefone: string,
     AnoPrimeiraCompra: number,
     vlrMaiorCompra: number,
-    dataMaiorCompra: string
+    dataMaiorCompra: string    
 } 
